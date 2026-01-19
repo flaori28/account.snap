@@ -1,0 +1,12 @@
+# Redirige vers index.html si une page n'est pas trouvée
+DirectoryIndex index.html
+
+# Permet de gérer les requêtes vers index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirige toutes les demandes vers index.html
+    RewriteRule ^$ index.html [L]
+    RewriteRule ^(.*)$ index.html [L]
+</IfModule>
